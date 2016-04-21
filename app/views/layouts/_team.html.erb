@@ -91,27 +91,31 @@
               * Use class "team-box-hover" to enable team box hover effect.
               * Use class "team-box-rounded" to enable team box rounded image.
               -->
-        <div class="team-box team-box-hover team-box-rounded">
-          <div class="team-image">
-            <img src="assets/img/team/staff-1.jpg" alt="John Doe">
-          </div>
+        <%= render 'layouts/team/teambox',
+          image: 'assets/img/team/staff-1.jpg',
+          name: 'Derek Mardian',
+          position: 'Founder / CEO / Developer',
+          social_media: [
+            github: '_blank',
+            facebook: '_blank',
+            twitter: '_blank',
+            instagram: '_blank'
+          ]
+        %>
 
-          <div class="team-info text-center">
-            <h4 class="team-info-title">John Doe</h4>
-            <p class="team-info-text">General Manager</p>
-
-            <!-- Begin social icons -->
-            <ul class="social-icons">
-              <li><a class="btn btn-social-min btn-default btn-rounded-full btn-sm" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="btn btn-social-min btn-default btn-rounded-full btn-sm" href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="btn btn-social-min btn-default btn-rounded-full btn-sm" href="" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-              <li><a class="btn btn-social-min btn-default btn-rounded-full btn-sm" href="" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
-            <!-- End social icons -->
-
-          </div>
-        </div>
-        <!-- End team box -->
+        <%= render 'layouts/team/teambox',
+          image: 'assets/img/team/staff-1.jpg',
+          name: 'John Doe',
+          position: 'General Manager',
+          social_media: [
+            facebook: '_blank',
+            twitter: '_blank',
+            pinterest: '_blank',
+            dribbble: '_blank'
+          ]
+        %>  
+     
+      <!-- End team box -->
       </div>
       <!-- End team carousel -->
 

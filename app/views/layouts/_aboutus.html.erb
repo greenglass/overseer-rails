@@ -38,64 +38,31 @@
   <div class="container margin-top-20">
     <div class="row wow fadeIn" data-wow-delay="0.3s">
 
-      <div class="col-sm-6 col-md-3">
-        <!-- Begin info box-1 -->
-        <div class="info-box info-box-1">
-          <span class="info-box-icon"><i class="fa fa-clone"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Fully Responsive</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-1 -->
-      </div> <!-- /.col -->
+      <%= render 'layouts/aboutus/infobox', 
+        box_title: 'Fully Responsive',
+        box_text: 'Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.',
+        box_icon: 'fa fa-clone'
+      %>
 
-      <div class="col-sm-6 col-md-3">
-        <!-- Begin info box-1 -->
-        <div class="info-box info-box-1">
-          <span class="info-box-icon"><i class="fa fa-diamond"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Clean Code</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-1 -->
-      </div> <!-- /.col -->
+      <%= render 'layouts/aboutus/infobox', 
+        box_title: 'Clean Code',
+        box_text: 'Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.',
+        box_icon: 'fa fa-diamond'
+      %>
+    
+      <%= render 'layouts/aboutus/infobox', 
+        box_title: 'One Page',
+        box_text: 'Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.',
+        box_icon: 'fa fa-television'
+      %>
 
-      <div class="col-sm-6 col-md-3">
-        <!-- Begin info box-1 -->
-        <div class="info-box info-box-1">
-          <span class="info-box-icon"><i class="fa fa-television"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">One Page</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-1 -->
-      </div> <!-- /.col -->
+      <%= render 'layouts/aboutus/infobox', 
+        box_title: 'Awesome Icons',
+        box_text: 'Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.',
+        box_icon: 'fa fa-bicycle'
+      %>
 
-      <div class="col-sm-6 col-md-3">
-        <!-- Begin info box-1 -->
-        <div class="info-box info-box-1">
-          <span class="info-box-icon"><i class="fa fa-bicycle"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Awesome Icons</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-1 -->
-      </div> <!-- /.col -->
-
-    </div> <!-- /.row -->
+  </div> <!-- /.row -->
   </div> <!-- /.container -->
 
 </section>
-
