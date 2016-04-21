@@ -45,53 +45,24 @@
 
   <div class="container wow fadeIn">
     <div class="row">
-      <div class="col-md-4">
+      
+      <%= render 'layouts/pricing/infobox',
+        box_title: 'Consectetur Adipis',
+        box_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.',
+        box_icon: 'fa fa-usd'
+      %>
 
-        <!-- Begin info box-4 -->
-        <div class="info-box info-box-4 wow fadeIn">
-          <span class="info-box-icon rounded-icon bg-main"><i class="fa fa-usd"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Consectetur Adipis</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-4 -->
+      <%= render 'layouts/pricing/infobox',
+        box_title: 'Excepteur Sint',
+        box_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.',
+        box_icon: 'fa fa-bar-chart'
+      %>
 
-      </div> <!-- /.col -->
-
-      <div class="col-md-4">
-
-        <!-- Begin info box-4 -->
-        <div class="info-box info-box-4 wow fadeIn" data-wow-delay="0.2s">
-          <span class="info-box-icon rounded-icon bg-main"><i class="fa fa-bar-chart"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Excepteur Sint</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-4 -->
-
-      </div> <!-- /.col -->
-
-      <div class="col-md-4">
-
-        <!-- Begin info box-4 -->
-        <div class="info-box info-box-4 wow fadeIn" data-wow-delay="0.4s">
-          <span class="info-box-icon rounded-icon bg-main"><i class="fa fa-balance-scale"></i></span>
-          <div class="info-box-info">
-            <h4 class="info-box-title">Cillum Dolore</h4>
-            <p class="info-box-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.
-            </p>
-          </div>
-        </div>
-        <!-- End info box-4 -->
-
-      </div> <!-- /.col -->
+      <%= render 'layouts/pricing/infobox',
+        box_title: 'Cillum Dolore',
+        box_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.',
+        box_icon: 'fa fa-balance-scale'
+      %>
 
     </div> <!-- /.row -->
   </div> <!-- /.container -->
@@ -140,114 +111,48 @@
               ======================
               * Use class "price-box-dark" for dark style.
               -->
-        <div class="price-box price-box-dark">
-          <div class="pr-box price-heading">
-            <i class="fa fa-plug"></i>
-            <h3 class="price-title">Light</h3>
-            <div class="price-heading-text">Light Membership</div>
-          </div>
-          <div class="pr-box price-box-price">
-            <div class="price"><span class="price-currency">$</span>69</div>
-            <div class="price-tenure">Per Month</div>
-          </div>
-          <div class="pr-box price-features">
-            <ul class="list-unstyled">
-              <li>Personal Use</li>
-              <li>5 Projects</li>
-              <li>1 Month License</li>
-              <li>27/7 Support</li>
-            </ul>
-          </div>
-          <div class="pr-box price-footer">
-            <a href="#" class="btn btn-white-bordered btn-rounded">Order Now</a>
-          </div>
-        </div>
-        <!-- End price box -->
 
-        <!-- Begin price box 
-              ======================
-              * Use class "price-box-dark" for dark style.
-              -->
-        <div class="price-box price-box-dark">
-          <div class="pr-box price-heading">
-            <i class="fa fa-gavel fa-2x"></i>
-            <h3 class="price-title">Basic</h3>
-            <div class="price-heading-text">Basic Membership</div>
-          </div>
-          <div class="pr-box price-box-price">
-            <div class="price"><span class="price-currency">$</span>99</div>
-            <div class="price-tenure">Per Month</div>
-          </div>
-          <div class="pr-box price-features">
-            <ul class="list-unstyled">
-              <li>Personal Use</li>
-              <li>10 Projects</li>
-              <li>1 Month License</li>
-              <li>27/7 Support</li>
-            </ul>
-          </div>
-          <div class="pr-box price-footer">
-            <a href="#" class="btn btn-white-bordered btn-rounded">Order Now</a>
-          </div>
-        </div>
-        <!-- End price box -->
+        <%= render 'layouts/pricing/pricebox',
+          title: 'Light',
+          heading: 'Light Membership',
+          price: '69',
+          icon: 'fa fa-plug',
+          features: [
+            'Personal Use',
+            '5 Projects',
+            '1 Month License',
+            '24/7 Support'
+          ],
+          featured: false
+        %>
 
-        <!-- Begin price box (featured)
-              =================================
-              * Use class "price-box-dark" for dark style.
-              -->
-        <div class="price-box price-box-dark price-box-featured">
-          <div class="price-box-ribbon">Popular</div>
-          <div class="pr-box price-heading">
-            <i class="fa fa-magic"></i>
-            <h3 class="price-title">Premium</h3>
-            <div class="price-heading-text">Premium Membership</div>
-          </div>
-          <div class="pr-box price-box-price">
-            <div class="price"><span class="price-currency">$</span>149</div>
-            <div class="price-tenure">Per Month</div>
-          </div>
-          <div class="pr-box price-features">
-            <ul class="list-unstyled">
-              <li>Multi Use</li>
-              <li>20 Projects</li>
-              <li>1 Month License</li>
-              <li>27/7 Support</li>
-            </ul>
-          </div>
-          <div class="pr-box price-footer">
-            <a href="#" class="btn btn-primary btn-rounded">Order Now</a>
-          </div>
-        </div>
-        <!-- End price box -->
+        <%= render 'layouts/pricing/pricebox',
+          title: 'Basic',
+          heading: 'Basic Membership',
+          price: '99',
+          icon: 'fa fa-gavel fa-2x',
+          features: [
+            'Personal Use',
+            '10 Projects',
+            '1 Month License',
+            '24/7 Support'
+          ],
+          featured: false
+        %>
 
-        <!-- Begin price box 
-              ======================
-              * Use class "price-box-dark" for dark style.
-              -->
-        <div class="price-box price-box-dark">
-          <div class="pr-box price-heading">
-            <i class="fa fa-plus"></i>
-            <h3 class="price-title">Premium Plus</h3>
-            <div class="price-heading-text">Plus Membership</div>
-          </div>
-          <div class="pr-box price-box-price">
-            <div class="price"><span class="price-currency">$</span>199</div>
-            <div class="price-tenure">Per Month</div>
-          </div>
-          <div class="pr-box price-features">
-            <ul class="list-unstyled">
-              <li>Multi Use</li>
-              <li>Unlimited Projects</li>
-              <li>1 Month License</li>
-              <li>27/7 Support</li>
-            </ul>
-          </div>
-          <div class="pr-box price-footer">
-            <a href="#" class="btn btn-white-bordered btn-rounded">Order Now</a>
-          </div>
-        </div>
-        <!-- End price box -->
+        <%= render 'layouts/pricing/pricebox',
+          title: 'Popular',
+          heading: 'Light Membership',
+          price: '149',
+          icon: 'fa fa-plug',
+          features: [
+            'Personal Use',
+            '5 Projects',
+            '1 Month License',
+            '24/7 Support'
+          ],
+          featured: true
+        %>
 
       </div>
       <!-- End prices carousel -->

@@ -1,0 +1,22 @@
+<div class="team-box team-box-hover team-box-rounded">
+  <div class="team-image">
+    <img src="<%= image %>" alt="John Doe">
+    </div>
+
+    <div class="team-info text-center">
+      <h4 class="team-info-title"><%= name %></h4>
+      <p class="team-info-text"><%= position %></p>
+
+      <!-- Begin social icons -->
+      <ul class="social-icons">
+        <% social_media.each do |media| %>
+          <% media.each_key do |key, value| %>
+            <li><a class="btn btn-social-min btn-default btn-rounded-full btn-sm" href="" target="<%= value.to_s %>"><i class="fa fa-<%= key.to_s %>"></i></a></li>
+          <% end %>
+        <% end %>
+      </ul>
+      <!-- End social icons -->
+
+    </div>
+  </div>
+
