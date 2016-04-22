@@ -12,7 +12,7 @@ Begin Header content
 * Use class "header-shadow" to enable header bottom shadow.
 * Use class "header-md", "header-lg" or "header-xlg" to change header size.
 -->
-  <div id="header" class="header-md fixed-top header-dark transparent">
+  <div id="header" class="header-md header-dark transparent">
     <div id="scrollspy" class="container header-container">
 
       <!-- Begin logo  -->
@@ -89,9 +89,8 @@ Begin Header content
             <li><span class="nav-link-separator">/</span></li>
             <li><a class="mlc sm-scroll" href="#section-8">Contact</a></li>
             <li><span class="nav-link-separator">/</span></li>
-            <li><a class="mlc sm-scroll" href="#">Login</a></li>
-
-
+            <li><%= link_to 'Login', new_user_session_path, class: 'mlc sm-scroll' %></li>
+            
           </ul>
           <!-- End navbar-nav -->
 
