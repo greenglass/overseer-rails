@@ -10,14 +10,20 @@
             <i class="icon-home"></i>Dashboard
           <% end %>
         </li>
-        <li class="submenu">
-          <a href=""><i class="icon-cog"></i>Widgets</a>
-          <ul>
-            <li><%= link_to 'Sidebar', '#' %></li>
-            <li><%= link_to 'Content', '#' %></li>
-            <li><%= link_to 'Shortcuts', '#' %></li>
-          </ul>
-        </li>
+
+        <%= render 'userpanel/leftsidebar/submenu',
+          menu_title: 'Ec2',
+          icon: 'icon-cog',
+          services: [
+            Instance: '#',
+            Snapshots: '#',
+            Volumes: '#',
+            Security_Groups: '#',
+            Key_Pairs: '#',
+            Network_Interfaces: '#'
+          ]
+        %>
+
       </ul>
     </div>
     <span id="leftbar-toggle" class="visible-xs sidebar-toggle">

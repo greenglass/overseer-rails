@@ -1,0 +1,13 @@
+<li class="submenu">
+  <%= link_to '' do %>
+    <i class="<%= icon %>"></i><%= menu_title %>
+  <% end %>
+  <ul>
+    <% services.each do |service| %>
+      <% service.each_key do |key, value| %>
+        <li><%= link_to key.to_s, value.to_s %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</li>
+
