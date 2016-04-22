@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :site
+  resources :userpanel
 
   get 'home', to: 'application#home'
   # The priority is based upon order of creation: first created -> highest priority.
