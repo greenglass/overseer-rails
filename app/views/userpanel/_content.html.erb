@@ -1,2 +1,42 @@
 <section id="content" class="container">
+  <div class="c-block" id="tabs">
+    <h3 class="block-title">Instances</h3>
+
+    <div class="tab-container">
+      <ul class="nav tab nav-tabs">
+        <li class="active"><a href="#resources">All Resources</a></li>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#protect">Protect</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="resources">
+          <ul class='list-group block'>
+            <% @all_machines.each do |param| %> 
+              <li class='list-group-item'><%= param.to_s %></li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="tab-pane" id="delete">
+          <% @delete_machines.each do |param| %> 
+            <li class='list-group-item'><%= param.to_s %></li>
+          <% end %>
+        </div>
+        <div class="tab-pane" id="protect">
+          <ul class='list-group block'>
+            <% @protect_machines.each do |param| %> 
+              <li class='list-group-item'><%= param.to_s %></li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="tab-pane" id="rules">
+          <% @rules.each do |param| %> 
+            <li class='list-group-item'><%= param.to_s %></li>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>

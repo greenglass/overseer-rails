@@ -268,24 +268,658 @@
                               <li>
                                   <a class="active" href="index.html"><i class="icon-home"></i>Dashboard</a>
                               </li>
+                              <li>
+                                 <a href="typography.html"><i class="icon-quill"></i>Typography</a>
+                              </li>
+                              <li>
+                                  <a href="wall.html"><i class="icon-bubbles-4"></i>Social Wall</a>
+                              </li>
                               <li class="submenu">
                                    <a href=""><i class="icon-cog"></i>Widgets</a>
                                    <ul>
-                                       <li><%= link_to 'Sidebar',</li>
+                                       <li><a href="sidebar-widgets.html">Sidebar</a></li>
                                        <li><a href="content-widgets.html">Content</a></li>
                                        <li><a href="shortcut-widgets.html">Shortcuts</a></li>
                                    </ul>
                               </li>
-                        </ul>
+                              <li class="submenu">
+                                   <a href=""><i class="icon-table-2"></i>Tables</a>
+                                   <ul>
+                                       <li><a href="tables.html">Normal Tables</a></li>
+                                       <li><a href="data-table.html">Data Table</a></li>
+                                   </ul>
+                              </li>
+                              <li class="submenu">
+                                   <a href=""><i class="icon-copy-2"></i>Forms</a>
+                                   <ul>
+                                       <li><a href="form-elements.html">Basic Form Elements</a></li>
+                                       <li><a href="form-components.html">Form Components</a></li>
+                                       <li><a href="form-examples.html">Form Examples</a></li>
+                                       <li><a href="form-validation.html">Form Validation</a></li>
+                                       <li><a href="form-wizard.html">Form Wizard</a></li>
+                                   </ul>
+                              </li>
+                              <li class="submenu">
+                                   <a href=""><i class="icon-glass"></i>User Interface</a>
+                                   <ul>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="labels.html">Labels</a></li>
+                                        <li><a href="images-icons.html">Images & Icons</a></li>
+                                        <li><a href="alerts.html">Alerts</a></li>
+                                        <li><a href="media.html">Media</a></li>
+                                        <li><a href="pagination-breadcrumbs.html">Pagination & Breadcrumbs</a></li>
+                                        <li><a href="components.html">Components</a></li>
+                                        <li><a href="other-components.html">Others</a></li>
+                                   </ul>
+                              </li>
+                              <li>
+                                  <a href="charts.html"><i class="icon-bars"></i>Charts</a>
+                              </li>
+                              <li>
+                                  <a href="file-manager.html"><i class="icon-folder"></i>File Manager</a>
+                              </li>
+                              <li>
+                                  <a href="calendar.html"><i class="icon-calendar"></i>Calendar</a>
+                              </li>
+                              <li class="submenu">
+                                   <a href=""><i class="icon-camera"></i>Photo Gallery</a>
+                                   <ul>
+                                        <li><a href="photo-gallery-default.html">Default Gallery</a></li>
+                                        <li><a href="photo-gallery-sortable.html">Sortable Gallery</a></li>
+          
+                                   </ul>
+                              </li>
+                              <li class="submenu">
+                                   <a href=""><i class="icon-stack"></i>Sample Pages</a>
+                                   <ul>
+                                       <li><a href="list-view.html">List View</a></li>
+                                       <li><a href="profile-page.html">Profile Page</a></li>
+                                       <li><a href="messages.html">Messages</a></li>
+                                       <li><a href="login.html">Login</a></li>
+                                       <li><a href="404.html">404 Error</a></li>
+                                   </ul>
+                              </li>
+                         </ul>
                     </div>
                     <span id="leftbar-toggle" class="visible-xs sidebar-toggle">
                          <i class="icon-angle-right"></i>
                     </span>
                </aside>
                
+               <!-- Right Sidebar -->
+               <aside id="rightbar" class="pull-right">
+                    <div class="sidebar-container">
+                         <!-- Date + Clock -->
+                         <div class="clock shadowed">
+                              <div id="date"></div>
+                              <div id="time">
+                                   <span id="hours"></span>
+                                   :
+                                   <span id="min"></span>
+                                   :
+                                   <span id="sec"></span>
+                              </div>
+                         </div>
+                         
+                         <!-- Calendar -->
+                         <div class="shadowed side-calendar">
+                              <div id="sidebar-calendar"></div>
+                         </div>
+                         
+                         <!-- Progress bar -->
+                         <div class="shadowed side-progress">
+                              <h3 class="title">Progress Bar</h3>
+                              <div class="side-border">
+                                   Joomla Website Development
+                                   <div class="progress">
+                                        <a href="#" data-toggle="tooltip" title="60%" class="yellow progress-bar ttips" style="width: 60%;">
+                                             <span class="sr-only">60% Complete</span>
+                                        </a>
+                                   </div>
+                              </div>
+                              <div class="side-border">
+                                   Opencart E-Commerce Website
+                                   <div class="progress">
+                                        <a href="#" data-toggle="tooltip" title="43%" class="green ttips progress-bar" style="width: 43%;">
+                                             <span class="sr-only">43% Complete</span>
+                                        </a>
+                                   </div>
+                              </div>
+                              <div class="side-border">
+                                   Social Media API
+                                   <div class="progress">
+                                        <a href="#" data-toggle="tooltip" title="81%" class="blue ttips progress-bar" style="width: 81%;">
+                                             <span class="sr-only">81% Complete</span>
+                                        </a>
+                                   </div>
+                              </div>
+                              <div class="side-border">
+                                   VB.Net Software Package
+                                   <div class="progress">
+                                        <a href="#" data-toggle="tooltip" title="10%" class="yellow ttips progress-bar" style="width: 10%;">
+                                             <span class="sr-only">10% Complete</span>
+                                        </a>
+                                   </div>
+                              </div>
+                              <div class="side-border">
+                                   Chrome Extension
+                                   <div class="progress">
+                                        <a href="#" data-toggle="tooltip" title="95%" class="ttips progress-bar red" style="width: 95%;">
+                                             <span class="sr-only">95% Complete</span>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+               
+                         <!-- Counts -->
+                         <ul class="counts shadowed">
+                              <li>
+                                  <span class="big-text">23500+</span>
+                                  <span class="sub-text">Facebook Likes</span>
+                              </li>
+                              <li>
+                                  <span class="big-text">125600+</span>
+                                  <span class="sub-text">Twitter Followers</span>
+                              </li>
+                              <li>
+                                  <span class="big-text">362</span>
+                                  <span class="sub-text">Support Tickets</span>
+                              </li>
+                         </ul>
+
+                         <!-- Notification -->
+                         <div class="notification shadowed">
+                              <ul class="tab">
+                                   <li class="active">
+                                        <a href="#inbox"><i class="icon-spinner-5"></i> Inbox</a>
+                                   </li>
+                                   <li>
+                                        <a href="#notification"><i class="icon-earth"></i> Notifications</a>
+                                   </li>
+                              </ul>
+                                 
+                              <div class="tab-content">
+                                   <div class="tab-pane active" id="inbox">
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/5.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Hay I just talk to Wendy...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/2.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">We have something to do...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/4.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">How do you do...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/1.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">What's up buddy? I won't...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/3.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Just check this up for...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        
+                                        <a class="show-more" href="#">See All</a>
+                                   </div>
+                                   <div class="tab-pane" id="notification">
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/1.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">David responded to you...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/2.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Wrndy like you post...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/3.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Jonathan completed the task...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/5.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Malinda responded to you...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/1.jpg" alt="">
+                                             </a>
+                                             <div class="media-body">
+                                                  <a href="#">Henry poke you back...</a>
+                                                  <small>4 hours ago</small>
+                                             </div>
+                                        </div>
+                                        <a class="show-more" href="#">See All</a>
+                                   </div>
+                              </div>  
+                         </div>
+                    </div>
+                    
+                    <span id="rightbar-toggle" class="hidden-lg sidebar-toggle">
+                         <i class="icon-angle-left"></i>
+                    </span>
+               </aside>
+               
                <!-- Content -->
-            <section id="content" class="container">
-            </section>
+               <section id="content" class="container">
+                    <!-- Shortcuts -->
+                    <div class="shortcut-area">
+                         <a class="shortcut" href="">
+                              <i class="icon-cart-2"></i>
+                              <span class="title">Sales</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-play-2"></i>
+                              <span class="title">Videos</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-download"></i>
+                              <span class="title">Downloads</span>
+                              <span class="s-counts red">14</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-calendar-2"></i>
+                              <span class="title">Events</span>
+                              <span class="s-counts blue">60</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-copy-2"></i>
+                              <span class="title">Reports</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-image"></i>
+                              <span class="title">Images</span>
+                         </a>
+                         <a class="shortcut" href="">
+                              <i class="icon-feed"></i>
+                              <span class="title">Connections</span>
+                              <span class="s-counts green">99</span>
+                         </a>
+                    </div>
+                    
+                    <!-- Main Graph -->
+                    <div class="block">
+                         <h2>Traffic Statistics</h2>
+                         <div class="config">                        
+                              <a href="" data-toggle="tooltip" data-original-title="Refresh" class="ttips">
+                                   <i class="icon-loop-2"></i>
+                              </a>
+                              
+                              <a href="" data-toggle="tooltip" data-original-title="Settings" class="ttips">
+                                   <i class="icon-wrench"></i>
+                              </a>
+                         </div>
+                         <div class="media">
+                              <div class="pull-left sub-graph hidden-xs">
+                                   <div class="sub-item">
+                                        <div id="site-impressions" class="tiny-charts"></div>
+                                        <small class="small">Site Impressions</small>
+                                   </div>
+                                   
+                                   <div class="sub-item">
+                                        <div id="site-bandwith" class="tiny-charts"></div>
+                                        <small class="small">Site Bandwith(mb)</small>
+                                   </div>
+                                   
+                                   <div class="sub-item">
+                                        <div id="side-pie2" class="tiny-charts side-pie-tiny"></div>
+                                        <div id="side-pie3" class="tiny-charts side-pie-tiny"></div>
+                                        <small class="small">Percentage difference</small>
+                                   </div>
+                              </div>
+                              <div id="areaChart" class="main-graph media-body"></div>
+                         </div>
+                         
+                    </div>
+                    
+                    <div class="row m-container">
+                         <!-- Today's Activity -->
+                         <div class="col-md-6 masonry listview-block">
+                              <div class="block">
+                                   <h2>Today's Activity</h2>
+                                   <div class="config">                        
+                                        <a href="" data-toggle="tooltip" data-original-title="Refresh" class="ttips">
+                                             <i class="icon-loop-2"></i>
+                                        </a>
+                                        <a href="" data-toggle="tooltip" data-original-title="Settings" class="ttips">
+                                             <i class="icon-wrench"></i>
+                                        </a>
+                                   </div>
+                                  
+                                   <div class="listview activity">
+                                        <div class="media">
+                                             <div class="number red pull-left">640</div>
+                                             <div class="media-body">
+                                                 <span>Facebook Likes</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="media">
+                                             <div class="number green pull-left">101</div>
+                                             <div class="media-body">
+                                                 <span>Twitter Followers</span>
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="media">
+                                             <div class="number blue pull-left">12K</div>
+                                             <div class="media-body">
+                                                 <span>Page Impressions</span>
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="media">
+                                             <div class="number yellow pull-left">20K</div>
+                                             <div class="media-body">
+                                                 <span>Youtube Views</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    
+                         <!-- Recent Posts -->
+                         <div class="col-md-6 masonry listview-block">
+                              <div class="block">
+                                   <h2>Latest Blog Posts</h2>
+                                   <div class="config">                        
+                                        <a href="" data-toggle="tooltip" data-original-title="Refresh" class="ttips">
+                                             <i class="icon-loop-2"></i>
+                                        </a>
+                                      
+                                        <a href="" data-toggle="tooltip" data-original-title="Settings" class="ttips">
+                                             <i class="icon-wrench"></i>
+                                        </a>
+                                   </div>
+                                   
+                                   <div class="listview">
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/1.jpg" alt="" class="poster-pic">
+                                             </a>
+                                             <div class="media-body">
+                                                  <small>2 Hours before by <a href="#">Jhon Beeber</a></small>
+                                                  <a href="#" class="post-title">Lorem ipsum dolor sit amet, consectetur adip...</a>
+                                                  <div class="btn-group controls">
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Edit" class="ttips btn btn-gr-gray btn-xs"><i class="icon-pencil"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Delete" class="ttips btn btn-gr-gray btn-xs"><i class="icon-close"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="View" class="ttips btn btn-gr-gray btn-xs"><i class="icon-arrow-right"></i></a> 
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/2.jpg" alt="" class="poster-pic">
+                                             </a>
+                                             <div class="media-body">
+                                                  <small>4 Hours before by <a href="#">David Melon</a></small>
+                                                  <a href="#" class="post-title">Sed scelerisque sapien dapibus sollicitudin...</a>
+                                                  <div class="btn-group controls">
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Edit" class="ttips btn btn-gr-gray btn-xs"><i class="icon-pencil"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Delete" class="ttips btn btn-gr-gray btn-xs"><i class="icon-close"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="View" class="ttips btn btn-gr-gray btn-xs"><i class="icon-arrow-right"></i></a> 
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/3.jpg" alt="" class="poster-pic">
+                                             </a>
+                                             <div class="media-body">
+                                                  <small>2 Days ago by <a href="#">Stathon Max</a></small>
+                                                  <a href="#" class="post-title">Fusce eros turpis, ultrices aliquam aliquet eget...</a>
+                                                  <div class="btn-group controls">
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Edit" class="ttips btn btn-gr-gray btn-xs"><i class="icon-pencil"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Delete" class="ttips btn btn-gr-gray btn-xs"><i class="icon-close"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="View" class="ttips btn btn-gr-gray btn-xs"><i class="icon-arrow-right"></i></a> 
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="media">
+                                             <a class="pull-left" href="#">
+                                                  <img src="img/profile-pics/4.jpg" alt="" class="poster-pic">
+                                             </a>
+                                             <div class="media-body">
+                                                  <small>5 Days ago by <a href="#">Malinda Hollaway</a></small>
+                                                  <a href="#" class="post-title">Vivamus interdum massa diam, sit amet posuere...</a>
+                                                  <div class="btn-group controls">
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Edit" class="ttips btn btn-gr-gray btn-xs"><i class="icon-pencil"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="Delete" class="ttips btn btn-gr-gray btn-xs"><i class="icon-close"></i></a>
+                                                       <a href="#" data-toggle="tooltip" data-original-title="View" class="ttips btn btn-gr-gray btn-xs"><i class="icon-arrow-right"></i></a> 
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         
+                         <!-- Quick Post -->
+                         <div class="col-md-6 masonry">
+                              <div class="block">
+                                   <h2>Post an Article</h2>
+                                   <div class="config">                        
+                                        <a href="" data-toggle="tooltip" data-original-title="Refresh" class="ttips">
+                                             <i class="icon-loop-2"></i>
+                                        </a>
+                                        <a href="" data-toggle="tooltip" data-original-title="Settings" class="ttips">
+                                             <i class="icon-wrench"></i>
+                                        </a>
+                                   </div>
+                                   <form id="quick-post" class="block-body form-validation">
+                                        <div class="form-group">
+                                             <label for="articleTitle">Article Title</label>
+                                             <input type="text" class="form-control input-sm validate[required] input-sm" id="articleTitle" placeholder="eg: My first post">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <label>Alias</label>
+                                             <input type="text" class="form-control input-sm validate[required] input-sm" placeholder="eg: My-first-post">
+                                        </div>
+                                          
+                                        <div class="form-group">
+                                             <label>Category</label><br/>
+                                             <select class="select" data-style="btn-gr-gray">
+                                                  <option>Category 1</option>
+                                                  <option>Category 2</option>
+                                                  <option>Category 3</option>
+                                                  <option>Category 4</option>
+                                                  <option>Category 5</option>
+                                                  <option>Category 6</option>
+                                             </select>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <label for="post">Post</label>
+                                             <textarea class="form-control input-sm validate[required] input-sm" id="post" placeholder="eg. Lorem ipsum dolor sit amet, consectetur adipiscing elit..."></textarea>
+                                        </div>
+     
+                                        <input type="submit" class="btn btn-primary btn-xs" value="PUBLISH">
+                                        <input type="submit" class="btn btn-success btn-xs" value="SAVE">
+                                          
+                                   </form>
+                              </div>
+                         </div>
+                             
+                         <!-- Todo List -->
+                         <div class="col-md-6 masonry">
+                              <div class="block">
+                                   <h2>Todo Lists</h2>
+                                   <div class="config">
+                                        <a href="" data-original-title="Add&nbsp;New" class="ttips" data-toggle="modal" data-target="#addNew-todo">
+                                            <i class="icon-plus add-new-todo"></i>
+                                        </a>
+                                        <a href="" data-toggle="tooltip" data-original-title="Refresh" class="ttips">
+                                            <i class="icon-loop-2"></i>
+                                        </a>
+                                        <a href="" data-toggle="tooltip" data-original-title="Settings" class="ttips">
+                                            <i class="icon-wrench"></i>
+                                        </a>
+                                   </div>
+                                   <div class="listview todo-list">
+                                        <div class="media">
+                                             <label class="pull-left">
+                                                  <input class="check-all" type="checkbox" value="" checked>
+                                             </label>
+                                             <div class="media-body">
+                                                 Nulla vel metus scelerisque ante sollicitudin commodo purus
+                                                  <div class="list-options">
+                                                      <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                                  </div>
+                                             </div>
+                                        </div>
+       
+                                       <div class="media">
+                                             <label class="pull-left">
+                                                   <input class="check-all" type="checkbox" value="">
+                                             </label>
+                                             <div class="media-body">
+                                                 Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam<br/>
+                                                 <small> An erant explicari salutatus duo, sumo doming delicata in cum. Eos at augue viderer principes</small><br/>
+                                             </div>
+                                             <div class="list-options">
+                                                 <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                             </div>
+                                       </div>
+                                       
+                                       <div class="media">
+                                             <label class="pull-left">
+                                                   <input class="check-all" type="checkbox" value="">
+                                             </label>
+                                             <div class="media-body">
+                                                 Inermis patrioque temporibus at ius, eos ei case partem blandit<br/>
+                                                 <small>Sumo doming delicata in cum. Eos at augue viderer principes</small>
+                                             </div>
+                                             <div class="list-options">
+                                                 <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                             </div>
+                                       </div>
+                                       
+                                       <div class="media">
+                                             <label class="pull-left">
+                                                   <input class="check-all" type="checkbox" value="">
+                                             </label>
+                                             <div class="media-body">
+                                                 Billa vel metus scelerisque ante sollicitudin commodo<br/>
+                                                 <small>Lorem ipsum dolor sit amet, per cu solet docendi</small>
+                                             </div>
+                                             <div class="list-options">
+                                                 <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                             </div>
+                                       </div>
+                                       
+                                       <div class="media">
+                                             <label class="pull-left">
+                                                   <input class="check-all" type="checkbox" value="">
+                                             </label>
+         
+                                             <div class="media-body">
+                                                 Per an urbanitas elaboraret qui, et dicit sadipscing vel
+                                             </div>
+                                             <div class="list-options">
+                                                 <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                             </div>
+                                       </div>
+                                       
+                                       <div class="media">
+                                             <label class="pull-left">
+                                                   <input class="check-all" type="checkbox" value="">
+                                             </label>
+                                             <div class="media-body">
+                                                 Per an error perpetua, fierent fastidii recteque ad pro<br/>
+                                                 <small> An erant explicari salutatus duo, sumo doming delicata in cum. Eos at augue viderer principes</small><br/>
+                                             </div>
+                                             <div class="list-options">
+                                                 <button class="btn btn-gr-gray btn-sm">Delete</button>
+                                             </div>
+                                       </div>
+                                   </div>
+                              </div>
+                              
+                              <!-- Add new todo list modal -->
+                              <div class="modal fade" id="addNew-todo">
+                                   <div class="modal-dialog modal-narrow">
+                                        <div class="modal-content">
+                                             <div class="modal-header">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                 <h4 class="modal-title">Add New Todo List</h4>
+                                             </div>
+                                             <form class="form-horizontal form-validation" role="form">
+                                                  <div class="modal-body"> 
+                                                      <div class="form-group">
+                                                            <label class="col-md-2 control-label">Name</label>
+                                                            <div class="col-md-10">
+                                                                 <input type="text" class="form-control validate[required] input-sm" placeholder="...">
+                                                            </div>
+                                                      </div>
+          
+                                                      <div class="form-group">
+                                                            <label class="col-md-2 control-label">Detail</label>
+                                                            <div class="col-md-10">
+                                                                 <textarea class="form-control auto-size input-sm" placeholder="Optional"></textarea>
+                                                            </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                       <button type="button" class="btn btn-sm" data-dismiss="modal">Cancel</button>
+                                                       <input type="submit" class="btn btn-sm" value="Add">
+                                                  </div>
+                                             </form>
+                                        </div>
+                                   </div>
+                              </div>
+                          </div>
+
+                         
+                    </div>
+               </section>
           </section>
           
           <footer id="footer">

@@ -6,13 +6,13 @@
     <li><%= link_to 'Home', userpanel_index_path %></li>
     
     <li class="dropdown">
-      <%= link_to '#', class: 'dropdown_toggle', 'data-toggle' => 'dropdown' do %>
+      <%= link_to '', class: 'dropdown_toggle', 'data-toggle' => 'dropdown' do %>
         User<b class="caret"></b>
         <ul class="dropdown-menu pull-right text-right">
-          <li><%= link_to 'Edit Settings', '' %></li>
-          <li><%= link_to 'User Profile', '' %></li>
+          <li><%= link_to 'Edit Settings', userpanel_index_path %></li>
+          <li><%= link_to 'User Profile', edit_user_registration_path %></li>
           <li class="divider"></li>
-          <li><%= link_to 'Logout', '' %></li>
+          <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
         </ul>
       <% end %>
     </li>
